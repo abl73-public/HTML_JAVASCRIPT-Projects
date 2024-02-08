@@ -72,7 +72,7 @@ function Handle_Operator(Next_Operator) {
         result = Number(result).toFixed(9);
 
         //This will remove any trailing 0s
-        result = (result * 1).toString();
+        result = result * 1;
 
         Calculator.Display_Value = result;
         Calculator.First_Operand = result;
